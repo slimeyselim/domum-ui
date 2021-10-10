@@ -1,4 +1,5 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
+/* TODO , populated the paths once have services etc setup */
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {

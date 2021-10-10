@@ -1,0 +1,7 @@
+
+<div *ngFor = "let person of people">
+  <h1>{{person.Id}}</h1>
+  <h4>{{person.Name}}</h4>
+  <h5 *ngFor = "let pet of person.Pets">{{pet.name}} || {{pet.animal}}</h5>
+  <mat-divider></mat-divider>
+</div>

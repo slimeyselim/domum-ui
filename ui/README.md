@@ -48,4 +48,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     -lazyloading modules
     -recursive tree
     -settings modal
-    -qr code scanner / reciever
+    -qr code scanner / receiver
+    -pipeline for ci/cd (github)
