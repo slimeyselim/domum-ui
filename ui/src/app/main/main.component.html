@@ -1,7 +1,11 @@
+<mat-form-field appearance="fill">
+  <mat-label>Test</mat-label>
+  <input matInput placeholder="What Test" [(ngModel)]="test">
+</mat-form-field>
 
 <div *ngFor = "let person of people">
   <h1>{{person.Id}}</h1>
   <h4>{{person.Name}}</h4>
-  <h5 *ngFor = "let pet of person.Pets">{{pet.name}} || {{pet.animal}}</h5>
+  <span *ngFor = "let pet of person.Pets">{{pet.Name}} || {{pet.Animal | convertToEmoji}} || {{pet.Rating}} <app-rating-stars [rating]='pet.Rating'></app-rating-stars></span>
   <mat-divider></mat-divider>
 </div>
