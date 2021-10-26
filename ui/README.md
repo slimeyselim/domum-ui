@@ -59,3 +59,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     -settings modal
     -qr code scanner / receiver
     -pipeline for ci/cd (github)
+    -delete undo; delay sending request (3s) if cancel dont send otherwise send... should be good to go
