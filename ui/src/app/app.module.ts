@@ -8,10 +8,13 @@ import { AppComponent } from './app.component';
 
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatRadioModule } from '@angular/material/radio';
 import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -21,6 +24,7 @@ import { MainComponent } from './main/main.component';
 
 import { ConvertToEmojiPipe } from './main/convert-to-emoji.pipe';
 import { RatingStarsComponent } from './shared/rating-stars/rating-stars.component';
+import { SettingsDialogComponent } from './settings/settings-dialog.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,7 @@ import { RatingStarsComponent } from './shared/rating-stars/rating-stars.compone
     NavbarComponent,
     MainComponent,
     RatingStarsComponent,
+    SettingsDialogComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -37,9 +42,11 @@ import { RatingStarsComponent } from './shared/rating-stars/rating-stars.compone
     BrowserModule,
     FormsModule,
     MatButtonModule,
+    MatDialogModule,
     MatDividerModule,
     MatIconModule,
     MatInputModule,
+    MatRadioModule,
     MatToolbarModule
   ],
   providers: [],

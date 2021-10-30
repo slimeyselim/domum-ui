@@ -2,8 +2,6 @@ import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
 
 import { IPerson } from './IPerson';
 
-
-
 const TEST_ARRAY : IPerson [] = [
   {Id : 1, Name: 'Billy', Pets : [{Animal : 'cat', Name:'mizzy', Rating: 4.5} ]},
   {Id : 2, Name: 'Frances', Pets : [{Animal : 'cat', Name:'mizzy',Rating: 1},{Animal : 'hamster', Name:'poopy', Rating: 2.5} ]},
