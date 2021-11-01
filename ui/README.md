@@ -4,15 +4,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
+## Where to put things
+
+if code is reused then is the shared folder i.e nested component or services? pipes?
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 check dev tools => source => webpack folder. then what debugging to put in a break point for debugging
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng g c component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -30,7 +34,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## Notes
 
+  - {{}} always string. [] can resolve to other datatypes
+  - add interfaces from both objects and feature sets (on components using the implements)
+  - private variables prefix with _. constants all caps
+  - use getters and setters to process value when get or set. use when want to run code when get or set a value   
 ## TODO
 
     -Bubbles
@@ -48,4 +57,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     -lazyloading modules
     -recursive tree
     -settings modal
-    -qr code scanner / reciever
+    -qr code scanner / receiver
+    -pipeline for ci/cd (github)
+    -delete undo; delay sending request (3s) if cancel dont send otherwise send... should be good to go
+
+
